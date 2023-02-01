@@ -1,0 +1,25 @@
+<h2>Lets Learn Angular Basics...</h2>
+
+<!-- String Interpolation{{}} => One Way Data Binding -->
+{{this.userName}}
+
+<br>
+
+
+<br>
+<div style="margin-top: 30px;">
+
+  <!-- Property Binding [] -->
+<input type="text" placeholder="Enter ur Name" [value]="userName" >
+<br>
+<button (click)="submit()"  >Submit</button>
+</div>
+<br>
+{{userEmail}}
+<br>
+<!-- Two Way binding in Angular [()].... Banana in   BOx syntax -->
+<div style="margin-top: 20px;">
+  <label>This is user email</label>
+  <input type="text" placeholder="Enter ur Email" [(ngModel)]="userEmail"  >
+  <button (click)="submit()"  >Submit</button>
+</div>

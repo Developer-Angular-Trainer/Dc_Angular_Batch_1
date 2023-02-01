@@ -1,45 +1,40 @@
 **********It's a 2 week Training, daily 1hr to 1.30 hr********************
 All these topics will be covered during the training in Latest Version Of Angular 15...
 
-=========================Day 1=================
+=========================Day 1 Start=================
 
 •What is Angular, Prerequisites of Angular and how to install angular in our computer?
+•create a Angular project for training.
+•Explain about Project structure. 
    *Nodejs  => How to check after installation => node --version
    *Npm  => Npm --version
    *Vscode => vscode download from website.
    *Angular CLI =>npm install @angular-cli
 
-=>How to create a project in Angular using Angular CLI?
+1. How to create a project in Angular using Angular CLI?
 A: ng new project-name
   
 
-+++ Html, css, JS these are the three things which is understanable by any browser...
+2. Html, css, JS these are the three things which is understanable by any browser...
 
-** What is Transpiling ? 
+3. What is Transpiling ? 
 A: Is the process of Converting all typescript code to Javascript code. Becoz Javascript is the language which is understanble by the browser..
-2> What is component?
-A: Components are building blocks of Angular, Components are combination of html,css,ts files
-7.8.0
- ~ tells install latest patch Version
-^ tells install latest minor version..
+4. What is component?
+A: Components are building blocks of Angular, Components are combination of html,css,ts files..
 
 
-7.8.4
-7.9.2
+5. ~ tells install latest patch Version
+6. ^ tells install latest minor version..
 
-7.9.2
-
-
-*** Command to run the project in the browser?
+7. Command to run the project in the browser?
 A: ng serve --open
 or
 ng s --o
 
-•create a Angular project for training.
-•Explain about Project structure. 
-
+================Day 1 End===========
+==================Day 2 start===================  
 •How to create components in angular ?
-•Whats component, module, service, directives(ngIf,Ngfor), pipes in angular?
+•Whats component, module, service, di rectives(ngIf,Ngfor), pipes in angular?
 •whats are the different type of bindings in Angular?
 •Whats input and output decorators in angular?
 •Whats is dependency injection in Angular? And how to achieve it?
