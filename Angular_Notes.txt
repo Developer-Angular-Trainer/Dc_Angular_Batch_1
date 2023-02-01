@@ -5,7 +5,7 @@ All these topics will be covered during the training in Latest Version Of Angula
 
 •What is Angular, Prerequisites of Angular and how to install angular in our computer?
 •create a Angular project for training.
-•Explain about Project structure. 
+•Explain about Project structure.
    *Nodejs  => How to check after installation => node --version
    *Npm  => Npm --version
    *Vscode => vscode download from website.
@@ -13,18 +13,23 @@ All these topics will be covered during the training in Latest Version Of Angula
 
 1. How to create a project in Angular using Angular CLI?
 A: ng new project-name
-  
+
 
 2. Html, css, JS these are the three things which is understanable by any browser...
 
-3. What is Transpiling ? 
+3. What is Transpiling ?
 A: Is the process of Converting all typescript code to Javascript code. Becoz Javascript is the language which is understanble by the browser..
 4. What is component?
 A: Components are building blocks of Angular, Components are combination of html,css,ts files..
 
 
-5. ~ tells install latest patch Version
-6. ^ tells install latest minor version..
+5. ~ tells install latest patch Version... tilde operator or Twiddle operator freezes major and minor versions
+6. ^ tells install latest minor version..  caret symbol its just freezes the major version only
+
+~15.1.3  today
+^15.1.3 today
+after 2 months 15.1.6 will be released and 15.2.4 also will be released.
+
 
 7. Command to run the project in the browser?
 A: ng serve --open
@@ -32,10 +37,41 @@ or
 ng s --o
 
 ================Day 1 End===========
-==================Day 2 start===================  
+
+
+==================Day 2 start===================
 •How to create components in angular ?
+A: ng g c componentname.
+* Tree shaking?
+A: It will remove the unused and dead code..
 •Whats component, module, service, di rectives(ngIf,Ngfor), pipes in angular?
+A: ng g p pipename
+   ng g d directiveName
+
+
+
+For getting the data from DB:
+DataBase => Backend API =>  service.ts => component.ts => component.html =>Then Display in the Browser....
+
+For Posting or inserting the data into DB
+Browser => component.html => component.ts => service.ts => Backend API => Data bAse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 •whats are the different type of bindings in Angular?
+A: By using ngmodel and import formsmodule
 •Whats input and output decorators in angular?
 •Whats is dependency injection in Angular? And how to achieve it?
 •Whats is routing in Angular(like how to navigate to one page to another page)
