@@ -56,22 +56,15 @@ DataBase => Backend API =>  service.ts => component.ts => component.html =>Then 
 For Posting or inserting the data into DB
 Browser => component.html => component.ts => service.ts => Backend API => Data bAse
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 •whats are the different type of bindings in Angular?
-A: By using ngmodel and import formsmodule
+A:One way binding , two way binding By using ngmodel and import formsmodule...
+
+==================Day 2 ENd==================
+
+
+==================Day 3 start===================
+
+* pipe in angular is used to transform the data.....
 •Whats input and output decorators in angular?
 •Whats is dependency injection in Angular? And how to achieve it?
 •Whats is routing in Angular(like how to navigate to one page to another page)

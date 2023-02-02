@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appCustomDirective]'
 })
 export class CustomDirectiveDirective {
 
-  constructor() { }
+  constructor(public ele:ElementRef) {
+
+this.ele.nativeElement.style.background = 'yellow';
+
+  }
 
 }
