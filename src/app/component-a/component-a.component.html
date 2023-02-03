@@ -1,0 +1,9 @@
+ <mat-card style="padding: 40px; margin: 20px;" >
+  <h2>Component A we can called it as Parent Component</h2>
+  <h2>{{title}}</h2>
+  <input type="text" [(ngModel)]="title" >
+</mat-card>
+<!-- Child COmponent -->
+<app-component-b [dataFromParent] = 'title' (childToParent)="recieveDataFromCHild($event)">
+
+</app-component-b>

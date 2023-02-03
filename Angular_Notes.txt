@@ -65,6 +65,21 @@ A:One way binding , two way binding By using ngmodel and import formsmodule...
 ==================Day 3 start===================
 
 * pipe in angular is used to transform the data.....
+
+===================Day 4 Start===========================
+
+*** How to Pass Data between the components in Angular or How to communicate betwen thr components in angular?
+A:  There are two ways..
+ 1> Parent to CHild Communication.. we use @Input Decorator...
+2. Child to Parent Communication.. we use @Output Decorator....
+
+
+3.  In child component only we write @Input and @output decorators..
+
+
+================================How to pass the data in angular between non related component?============================
+A: We can services concept to pass the data between non related components....
+
 •Whats input and output decorators in angular?
 •Whats is dependency injection in Angular? And how to achieve it?
 •Whats is routing in Angular(like how to navigate to one page to another page)

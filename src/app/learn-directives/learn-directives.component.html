@@ -1,0 +1,63 @@
+<h2>Learn Directives</h2>
+     <!-- Attribute Directives ngclass and ngstyle -->
+
+     <h1  [ngStyle]="{'background-color':color ==='brown'?'brown':'green'}">Data Caliper</h1>
+     <!-- <h1  [style.background]="{'background-color':color ==='brown'?'brown':'green'}">Data Caliper</h1> -->
+
+     <button (click)="changeColor('brown')">Change color to Brown</button>
+
+     <button (click)="changeColor('green')">Change color to Green</button>
+
+
+     <!-- Structural Directives -->
+<!-- Statically binding or displaying wihtout using FOr Loop -->
+
+<h2>Statically binding or displaying wihtout using FOr Loop</h2>
+<h2>{{alphabets[0]}}</h2>
+<!-- Structurtal directive *ngFor and *ngIf -->
+<h2>Dynamically binding or displaying  using FOr Loop</h2>
+<div *ngFor="let alphabet of alphabets">
+  <h1>{{alphabet}}</h1>
+
+</div>
+
+
+<!-- *NgIf -->
+
+<div style="margin-top: 30px;border: 1px solid green;">
+<h3>Contact Type</h3>
+  <input type="radio" name="contactType" [(ngModel)]="contactTypeSelectedValue"  value="email"> Email
+  <input type="radio" name="contactType" [(ngModel)]="contactTypeSelectedValue"  value="mobile"> Phone
+</div>
+
+{{contactTypeSelectedValue}}
+
+
+<div *ngIf="contactTypeSelectedValue ==='email'" style="margin-top: 10px;border: 1px solid red;">
+ <label>EMail ID</label>
+   <input type="text" placeholder="Please Enter Email ID">
+  </div>
+
+  <div *ngIf="contactTypeSelectedValue ==='mobile'" style="margin-top: 10px;border: 1px solid red;">
+    <label>Mobile NUmber</label>
+      <input type="text" placeholder="Please Enter Mobile Number">
+     </div>
+
+
+     <div  style="margin-top: 10px;border: 1px solid red;">
+ <label>EMail ID</label>
+   <input type="text" placeholder="Please Enter Email ID">
+  </div>
+
+  <div  style="margin-top: 10px;border: 1px solid red;">
+    <label>Mobile NUmber</label>
+      <input type="text" placeholder="Please Enter Mobile Number" [disabled] ="contactTypeSelectedValue === 'email'">
+     </div>
+
+
+
+
+
+
+
+

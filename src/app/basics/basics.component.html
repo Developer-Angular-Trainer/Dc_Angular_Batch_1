@@ -6,110 +6,30 @@
 {{doubleTheValue()}}
 
 <!-- String Interpolation{{}} => One Way Data Binding -->
-<!-- {{this.userName}}
+ {{this.userName}}
 
 <br>
 
 
 <br>
-<div style="margin-top: 30px;"> -->
+<div style="margin-top: 30px;">
 
   <!-- Property Binding [] -->
-<!-- <input type="text" placeholder="Enter ur Name" [value]="userName" >
+<input type="text" placeholder="Enter ur Name" [value]="userName" >
 <br>
 <button (click)="submit()"  >Submit</button>
 </div>
 <br>
 {{userEmail}}
-<br> -->
+<br>
 <!-- Two Way binding in Angular [()].... Banana in   BOx syntax -->
-<!-- <div style="margin-top: 20px;">
+<div style="margin-top: 20px;">
   <label>This is user email</label>
   <input type="text" placeholder="Enter ur Email" [(ngModel)]="userEmail"  >
   <button (click)="submit()"  >Submit</button>
-</div> -->
-
-<!-- Structural Directives -->
-<!-- Statically binding or displaying wihtout using FOr Loop -->
-
-<!-- <h2>Statically binding or displaying wihtout using FOr Loop</h2> -->
-<!-- <h2>{{alphabets[0]}}</h2> -->
-<!-- Structurtal directive *ngFor and *ngIf -->
-<!-- <h2>Dynamically binding or displaying  using FOr Loop</h2>
-<div *ngFor="let alphabet of alphabets">
-  <h1>{{alphabet}}</h1>
-
-</div> -->
-
-
-<!-- *NgIf -->
-
-<div style="margin-top: 30px;border: 1px solid green;">
-<h3>Contact Type</h3>
-  <input type="radio" name="contactType" [(ngModel)]="contactTypeSelectedValue"  value="email"> Email
-  <input type="radio" name="contactType" [(ngModel)]="contactTypeSelectedValue"  value="mobile"> Phone
 </div>
 
-{{contactTypeSelectedValue}}
 
-
-<div *ngIf="contactTypeSelectedValue ==='email'" style="margin-top: 10px;border: 1px solid red;">
- <label>EMail ID</label>
-   <input type="text" placeholder="Please Enter Email ID">
-  </div>
-
-  <div *ngIf="contactTypeSelectedValue ==='mobile'" style="margin-top: 10px;border: 1px solid red;">
-    <label>Mobile NUmber</label>
-      <input type="text" placeholder="Please Enter Mobile Number">
-     </div>
-
-
-     <div  style="margin-top: 10px;border: 1px solid red;">
- <label>EMail ID</label>
-   <input type="text" placeholder="Please Enter Email ID">
-  </div>
-
-  <div  style="margin-top: 10px;border: 1px solid red;">
-    <label>Mobile NUmber</label>
-      <input type="text" placeholder="Please Enter Mobile Number" [disabled] ="contactTypeSelectedValue === 'email'">
-     </div>
-
-
-     <!-- Attribute Directives ngclass and ngstyle -->
-
-     <h1  [ngStyle]="{'background-color':color ==='brown'?'brown':'green'}">Data Caliper</h1>
-     <!-- <h1  [style.background]="{'background-color':color ==='brown'?'brown':'green'}">Data Caliper</h1> -->
-
-     <button (click)="changeColor('brown')">Change color to Brown</button>
-
-     <button (click)="changeColor('green')">Change color to Green</button>
-
-
-
-     <!-- PIPES -->
-
-     <h2>Pipes</h2>
-Display wihtout pipe:
-     <label>Person Name : {{personName  }}</label>
-     <br>
-     using pipe:
-     <label>Person Name : {{personName | uppercase}}</label>
-
-    <br>
-
-    date: {{date | date :'MM-dd-yyyy hh:mm:ss'}}
-<div style="margin-top: 30px;">
-    <h2 appCustomDirective>Custom Directives</h2>
-
-    <h4 appCustomDirective>Angular  Training..</h4>
-
-
-  </div>
-
-  <h4>{{cost}}</h4>
-
-  <h4>{{cost | customPipes}}</h4>
-
-
-
+<app-learn-directives></app-learn-directives>
+<app-learn-pipes />
 
