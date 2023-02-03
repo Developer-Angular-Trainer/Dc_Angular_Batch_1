@@ -88,7 +88,7 @@ A: We can services concept to pass the data between non related components....
 •How to get data from API and display in frontend?
 •How to post data to API?
 •How to add Angular Material to the project.How to debug Angular app?What is local storage and session storage?
-•Whats the process to build the Angular project and deploy to cloud?
+•Whats the process to build the Angular project and deploy to cloud??
 
 
 
