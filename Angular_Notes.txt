@@ -81,14 +81,17 @@ A:  There are two ways..
 A: We can services concept to pass the data between non related components....
 
 •Whats input and output decorators in angular?
+
+================Day 5 start==================
 •Whats is dependency injection in Angular? And how to achieve it?
-•Whats is routing in Angular(like how to navigate to one page to another page)
+•Whats is routing in Angular(like how to navigate to one page to another page)?
+A:  Step:1
 •How to call any methods on component page load?•How to share data between the components?
 •What are forms in Angular(Reactive forms and Template Driven Forms)
 •How to get data from API and display in frontend?
 •How to post data to API?
 •How to add Angular Material to the project.How to debug Angular app?What is local storage and session storage?
-•Whats the process to build the Angular project and deploy to cloud??
+•Whats the process to build the Angular project and deploy to cloud?
 
 
 

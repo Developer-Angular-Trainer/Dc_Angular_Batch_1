@@ -1,4 +1,10 @@
+<div style="margin: 20px;">
 <h2>Lets Learn Angular Basics...</h2>
+<div style="margin: 20px; display: flex; gap: 40px;">
+  <button mat-raised-button color="accent" routerLink="learn-pipes">Learn Pipes</button>
+    <button mat-raised-button color="warn" routerLink="learn-directives">Learn Directives</button>
+</div>
+<mat-card class="mat-elevation-z8" style="padding:20px;">
 <input type="text" placeholder="Enter ur Email" [(ngModel)]="userEmail"  >
 {{userEmail}}
 
@@ -30,6 +36,10 @@
 </div>
 
 
-<app-learn-directives></app-learn-directives>
-<app-learn-pipes />
 
+
+</mat-card>
+
+
+<router-outlet></router-outlet>
+</div>

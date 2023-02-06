@@ -18,13 +18,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './shared/header/header.component';
 @NgModule({
   declarations: [
-    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent
+    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,MatCheckboxModule,MatCardModule
+    AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,MatCheckboxModule,MatCardModule, MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
