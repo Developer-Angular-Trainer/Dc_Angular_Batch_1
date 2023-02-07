@@ -14,7 +14,13 @@
     <button mat-flat-button color="primary" routerLink="basics">Learn Basics</button>
   </div>
   <div>
-    <button mat-flat-button color="primary">Contact Us</button>
+    <button mat-flat-button color="primary" routerLink="contact">Contact Us</button>
+  </div>
+
+  <div style="margin-left:200px">
+    <mat-icon [matBadge]="countFromService"  class="material-symbols-outlined">
+      shopping_cart
+      </mat-icon>
   </div>
 </div>
 </mat-toolbar>

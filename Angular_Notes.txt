@@ -94,6 +94,26 @@ A:  Step:1
 •Whats the process to build the Angular project and deploy to cloud?
 
 
+====Observable and Promise:
+Observable is lazy , and emit multiple values and we use subscribe method to consume the data from observable....
+Promise is not lazy, and emit single values and we use then method to consume the data from promise...
+
+
+===========Pass data from one to another component which has no relationship..........
+
+step 1 : In service create the variable with BhevaiorSubject...
+Step2:  Create the intsance in the components using dependancy injection.
+Step3: Use next method to send the data to service..
+step:4 :
+
+====================Forms ============================
+There r two different types of forms in Angular.....
+1. Template Driven Forms...  ngModel ....Forms Module
+
+
+
+
+2. Reactive or Model Driven Forms.....
 
 
 

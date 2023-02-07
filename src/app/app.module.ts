@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BasicsComponent } from './basics/basics.component';
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { CustomPipesPipe } from './custom-pipes.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LearnDirectivesComponent } from './learn-directives/learn-directives.component';
 import { LearnPipesComponent } from './learn-pipes/learn-pipes.component';
 import { ComponentAComponent } from './component-a/component-a.component';
@@ -24,13 +24,20 @@ import { ContactComponent } from './contact/contact.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './shared/header/header.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+import { LoginComponent } from './login/login.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
-    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent
+    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent, LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,MatCheckboxModule,MatCardModule, MatToolbarModule
+    AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,
+    MatCheckboxModule,MatCardModule, MatToolbarModule, MatIconModule, MatBadgeModule,
+    ReactiveFormsModule,MatFormFieldModule, MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

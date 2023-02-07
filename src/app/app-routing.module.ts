@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { BasicsComponent } from './basics/basics.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LearnDirectivesComponent } from './learn-directives/learn-directives.component';
 import { LearnPipesComponent } from './learn-pipes/learn-pipes.component';
@@ -38,6 +39,8 @@ const routes: Routes = [
       path:'learn-directives', component:LearnDirectivesComponent
     }
   ]
+},{
+path:'contact', component:ContactComponent
 },
 {
 path:'**', component:PageNotFoundComponent
