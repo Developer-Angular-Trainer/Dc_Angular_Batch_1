@@ -14,9 +14,17 @@
     <button mat-flat-button color="primary" routerLink="basics">Learn Basics</button>
   </div>
   <div>
-    <button mat-flat-button color="primary" routerLink="contact">Contact Us</button>
+    <button mat-flat-button color="primary" (click)="gotToContactPage()"  >Contact Us</button>
   </div>
 
+  <!-- <div>
+    <button mat-flat-button color="primary" (click)="gotToContactPage()"  >Log In</button>
+  </div> -->
+
+
+  <div *ngIf=" this.isLoggedIn ==='yes'">
+    <button  mat-flat-button color="primary" (click)="goToLogIn()"  >Log Out</button>
+  </div>
   <div style="margin-left:200px">
     <mat-icon [matBadge]="countFromService"  class="material-symbols-outlined">
       shopping_cart

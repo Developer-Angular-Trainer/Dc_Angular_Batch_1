@@ -1,4 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataServiceService } from 'src/app/services/data-service.service';
 
 @Component({
@@ -11,10 +12,11 @@ export class HeaderComponent implements OnInit {
   countFromService :any;
 // in newer 14+ this syntax.......
  dataService = inject(DataServiceService);
-
+ router = inject(Router);
+  isLoggedIn :any;
 
 // // Older version below 14 version
-//  constructor(public dataService1 : DataServiceService){
+//  constructor(public dataService1 : DataServiceService,){
 
 //  }
 ngOnInit(): void {
@@ -32,6 +34,16 @@ ngOnInit(): void {
   this.dataService.countOfCart.subscribe((data:any)=>{
     console.log(data,'Old Syntax');
   })
+  debugger
+ this.isLoggedIn = localStorage.getItem('alreadyLoggedIn');
 
+}
+
+gotToContactPage(){
+  this.router.navigate(['contact']);
+}
+goToLogIn(){
+  localStorage.clear();
+  this.router.navigate(['login']);
 }
 }

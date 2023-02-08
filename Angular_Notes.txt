@@ -86,7 +86,11 @@ A: We can services concept to pass the data between non related components....
 •Whats is dependency injection in Angular? And how to achieve it?
 •Whats is routing in Angular(like how to navigate to one page to another page)?
 A:  Step:1
+
+===================Day 7=============
 •How to call any methods on component page load?•How to share data between the components?
+
+
 •What are forms in Angular(Reactive forms and Template Driven Forms)
 •How to get data from API and display in frontend?
 •How to post data to API?
@@ -113,7 +117,12 @@ There r two different types of forms in Angular.....
 
 
 
-2. Reactive or Model Driven Forms.....
+2. Reactive or Model Driven Forms..... formControlName ...ReactiveFormsModule..
 
 
 
+==========ADANI PORT , ADANI GREEN=============
+
+Identity Provider Login Page
+
+www. ngtraining123.com

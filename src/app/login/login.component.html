@@ -1,25 +1,33 @@
 <!-- <h1> Welcome to Login....</h1> -->
-
-<mat-card style="width: fit-content;margin: auto;padding: 30px;">
+<div style="width: fit-content;margin: auto;" class="mat-elevation-z11">
+<mat-card style="width: fit-content;margin: auto;padding: 30px;margin-top
+:50px">
   <h2>Weclome to Login,...</h2>
 <form [formGroup]="loginForm">
 
   <mat-form-field appearance="outline">
     <mat-label>User Name</mat-label>
-    <input matInput formControlName="userName" >
 
+    <input matInput formControlName="userName" required >
 
-  </mat-form-field>
+<mat-error *ngIf="loginForm.controls['userName'].hasError('required')">Please Enter the UserName</mat-error>
+
+<mat-error *ngIf="loginForm.controls['userName'].hasError('minlength')">Please Enter atleast 3 characters</mat-error>
+
+</mat-form-field>
 <br>
   <mat-form-field appearance="outline">
-    <mat-label>PassWord</mat-label>
-    <input matInput formControlName="password" >
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password" required >
+    <mat-error *ngIf="loginForm.controls['password'].hasError('required')">Please Enter the Password</mat-error>
 
 
   </mat-form-field>
 <div>
-  <button mat-raised-button color="primary" >Login</button>
-  <button mat-raised-button style="margin-left: 20px;" color="warn">Cancel</button>
+
+  <button mat-raised-button color="primary" (click)="logIn()" [disabled]="loginForm.invalid" >Login</button>
+  <button mat-raised-button style="margin-left: 20px;" color="warn" (click)="loginForm.reset()">Clear</button>
 </div>
 </form>
 </mat-card>
+</div>
