@@ -29,15 +29,19 @@ import {MatBadgeModule} from '@angular/material/badge';
 import { LoginComponent } from './login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { NoAccessComponent } from './no-access/no-access.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import { UsersComponent } from './users/users.component';
 @NgModule({
   declarations: [
-    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent, LoginComponent
+    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent, LoginComponent, NoAccessComponent, UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,
     MatCheckboxModule,MatCardModule, MatToolbarModule, MatIconModule, MatBadgeModule,
-    ReactiveFormsModule,MatFormFieldModule, MatInputModule
+    ReactiveFormsModule,MatFormFieldModule, MatInputModule, HttpClientModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

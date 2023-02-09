@@ -34,8 +34,12 @@ ngOnInit(): void {
   this.dataService.countOfCart.subscribe((data:any)=>{
     console.log(data,'Old Syntax');
   })
-  debugger
- this.isLoggedIn = localStorage.getItem('alreadyLoggedIn');
+
+//  this.isLoggedIn = localStorage.getItem('alreadyLoggedIn');
+
+ this.dataService.isLoggedIn.subscribe(data=>{
+  this.isLoggedIn = data;
+ })
 
 }
 
@@ -43,6 +47,7 @@ gotToContactPage(){
   this.router.navigate(['contact']);
 }
 goToLogIn(){
+  this.isLoggedIn = false;
   localStorage.clear();
   this.router.navigate(['login']);
 }

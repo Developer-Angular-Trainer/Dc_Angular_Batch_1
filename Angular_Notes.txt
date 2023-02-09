@@ -126,3 +126,20 @@ There r two different types of forms in Angular.....
 Identity Provider Login Page
 
 www. ngtraining123.com
+
+
+*** Service***
+Service is nothing but a class. Which is decorated with @Injectable, The main purpose of the service the code resuablilty, where we can share data , fucntions to any component in an project..
+
+===Pascal case ===
+Class Names
+ex: AppComponent
+===Camel Case ====
+Methods/functions ,variables
+ex: getData, userName
+
+
+====To call Any api===
+1.put the URL inside the environment
+2.Import httpclientmodule inside appmodule.
+3. inject the http client inside the service.

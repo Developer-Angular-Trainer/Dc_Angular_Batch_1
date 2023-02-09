@@ -1,5 +1,6 @@
 export const environment = {
 
+  apiUrl :'https://jsonplaceholder.typicode.com/posts'
 
-  apiUrl :'dev/getUsers'
+  // apiUrl :'https://jsonplaceholder.typicode.com/posts'
 };

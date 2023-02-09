@@ -6,6 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataServiceService {
   countOfCart = new BehaviorSubject<any>(0);
+  isLoggedIn = new BehaviorSubject<any>(false);
   constructor() { }
 
 }

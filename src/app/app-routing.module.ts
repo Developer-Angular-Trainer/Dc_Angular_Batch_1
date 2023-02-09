@@ -8,7 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { LearnDirectivesComponent } from './learn-directives/learn-directives.component';
 import { LearnPipesComponent } from './learn-pipes/learn-pipes.component';
 import { LoginComponent } from './login/login.component';
+import { NoAccessComponent } from './no-access/no-access.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UsersComponent } from './users/users.component';
+
 
 
 //  Step1: Declare the routes of our components.
@@ -30,7 +33,7 @@ const routes: Routes = [
 ,
 
 {
-  path:'basics', component: BasicsComponent,
+  path:'basics', component: BasicsComponent,canActivate:[AuthGuard],
   children:[
     {
 
@@ -48,6 +51,14 @@ path:'contact', component:ContactComponent, canActivate:[AuthGuard]
 {
   path:'login', component:LoginComponent
   },
+  {
+    path:'no-access', component:NoAccessComponent
+    },
+
+
+    {
+      path:'users', component:UsersComponent
+      },
 {
 path:'**', component:PageNotFoundComponent
 }
