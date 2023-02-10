@@ -10,6 +10,8 @@ import { LearnPipesComponent } from './learn-pipes/learn-pipes.component';
 import { LoginComponent } from './login/login.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SaveUserComponent } from './save-user/save-user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsersComponent } from './users/users.component';
 
 
@@ -59,6 +61,13 @@ path:'contact', component:ContactComponent, canActivate:[AuthGuard]
     {
       path:'users', component:UsersComponent
       },
+      {
+        path:'users/:id', component:UserDetailsComponent
+        },
+
+      {
+        path:'save-user', component:SaveUserComponent
+        },
 {
 path:'**', component:PageNotFoundComponent
 }

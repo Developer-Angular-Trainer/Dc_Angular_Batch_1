@@ -33,15 +33,20 @@ import { NoAccessComponent } from './no-access/no-access.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import { UsersComponent } from './users/users.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SaveUserComponent } from './save-user/save-user.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
-    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent, LoginComponent, NoAccessComponent, UsersComponent
+    AppComponent, BasicsComponent, CustomDirectiveDirective, CustomPipesPipe, LearnDirectivesComponent, LearnPipesComponent, ComponentAComponent, ComponentBComponent, ComponentCComponent, ComponentDComponent, HomeComponent, AboutComponent, ContactComponent, PageNotFoundComponent, HeaderComponent, LoginComponent, NoAccessComponent, UsersComponent, UserDetailsComponent, SaveUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, FormsModule, BrowserAnimationsModule,MatButtonModule,
     MatCheckboxModule,MatCardModule, MatToolbarModule, MatIconModule, MatBadgeModule,
-    ReactiveFormsModule,MatFormFieldModule, MatInputModule, HttpClientModule,MatTableModule
+    ReactiveFormsModule,MatFormFieldModule, MatInputModule, HttpClientModule,MatTableModule,
+    MatProgressSpinnerModule, MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

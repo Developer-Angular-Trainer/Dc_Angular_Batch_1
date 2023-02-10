@@ -1,0 +1,46 @@
+<!-- <h1> Welcome to Login....</h1> -->
+<div style="width: fit-content;margin: auto;" class="mat-elevation-z11">
+  <mat-card style="width: fit-content;margin: auto;padding: 30px;margin-top
+  :50px">
+    <h2>Weclome to Save User,...</h2>
+  <form [formGroup]="saveForm">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Id</mat-label>
+
+      <input matInput formControlName="id"  >
+
+
+
+  </mat-form-field>
+  <br>
+    <mat-form-field appearance="outline">
+      <mat-label>User Id</mat-label>
+      <input matInput type="text" formControlName="userId"  >
+
+
+    </mat-form-field>
+
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Title </mat-label>
+      <input matInput type="text" formControlName="title"  >
+
+
+    </mat-form-field>
+
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Body </mat-label>
+      <input matInput type="text" formControlName="body"  >
+
+
+    </mat-form-field>
+  <div>
+    <button mat-raised-button color="accent" (click)="loadData()" style="margin-right: 2px;"  >Load Data</button>
+    <button mat-raised-button color="primary" (click)="save()"   >Save</button>
+    <button mat-raised-button style="margin-left: 20px;" color="warn" (click)="saveForm.reset()">Clear</button>
+  </div>
+  </form>
+  </mat-card>
+  </div>

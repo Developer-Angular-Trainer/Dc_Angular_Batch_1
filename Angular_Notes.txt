@@ -143,3 +143,7 @@ ex: getData, userName
 1.put the URL inside the environment
 2.Import httpclientmodule inside appmodule.
 3. inject the http client inside the service.
+
+===JIT vs AOT===
+JIT => Just In Time Compilation
+AOT => Ahead of Time compilation..
